@@ -32,9 +32,11 @@ async function runAction() {
         console.log(`Giphy GIF comment added successfully! Comment URL: ${prComment.data.images.downsized.url}`);
     } else {
         console.log('Action was not triggered by a pull request, skipping comment creation.');
+    } else {
+        console.log(`Owner: ${owner}, Repo: ${repo}, Issue Number: ${issue_number}`);
     }
   } catch (error) {
-      console.error('Error:', error);
+      console.error(`Error while creating comment: ${error}`);
       process.exit(1);
   }
 }
