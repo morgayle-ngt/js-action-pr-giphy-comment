@@ -9,8 +9,8 @@ inputs:
     required: true
 
 runs:
-  using: 'node16'
-  image: 'dist/index.js'
+  using: 'node20'
+  main: 'dist/index.js'
 
 branding:
   icon: 'award'
