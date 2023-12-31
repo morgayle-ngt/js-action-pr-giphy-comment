@@ -37545,7 +37545,7 @@ async function runAction() {
         await octokit.issues.createComment({
             owner,
             repo,
-            issue_number: number,
+            issue_number,
             body: `### PR - ${number} \n ### Thank you for the contribution! \n ![Giphy](${prComment.data.images.downsized.url})`
         });
        
