@@ -1,4 +1,4 @@
-name: 'Giphy PR Comment'
+name: 'Michaels Giphy PR Comment'
 description: 'Add a Giphy GIF comment to new pull requests.'
 inputs:
   github-token:
@@ -11,3 +11,7 @@ inputs:
 runs:
   using: 'node20'
   image: 'dist/index.js'
+
+branding:
+  icon: 'award'
+  color: 'green'
